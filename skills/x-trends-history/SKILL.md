@@ -21,7 +21,7 @@ Example: https://twtdata.com/twitter-trends/kenya/07-21-2026/ (Kenya, 21 July 20
 ## Reading a page
 
 1. Fetch the dated page.
-2. The list itself loads from the URL in the page's `hx-get` attribute (`/twitter-trends/table/?woeid=...&location_slug=...&date=MM-DD-YYYY`). Fetch that URL once. Each row is a trend name with its position on the list.
+2. The list is in the page itself, under "Trending on <date>". Each row gives the trend's position, its name, and its Score (0-100), best rank, hours on the list and number of locations. The Score is twtData's own measure, not a tweet count. No second request is needed.
 3. If it shows no trends, the archive has no list for that country and day.
 
 ## Countries
